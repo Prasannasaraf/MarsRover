@@ -26,13 +26,13 @@ public class Rover {
 
     private void moveForward() {
         if (direction == 'N')
-            yCoordinate+=1;
+            yCoordinate += 1;
         else if (direction == 'S')
-            yCoordinate-=1;
+            yCoordinate -= 1;
         else if (direction == 'E')
-            xCoordinate+=1;
+            xCoordinate += 1;
         else if (direction == 'W')
-            xCoordinate-=1;
+            xCoordinate -= 1;
     }
 
     private void moveRight() {

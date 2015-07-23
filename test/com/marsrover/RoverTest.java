@@ -98,4 +98,11 @@ public class RoverTest {
 
         assertEquals(new Rover(0, 1, 'W'), rover.navigateTo("M"));
     }
+
+    @Test
+    public void checkingFinalPositionAndDirectionForAnInstructionLMLMLMLMM() {
+        rover = new Rover(1, 2, 'N');
+
+        assertEquals(new Rover(1, 3, 'N'),rover.navigateTo("LMLMLMLMM"));
+    }
 }
