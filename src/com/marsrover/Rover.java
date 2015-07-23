@@ -34,6 +34,8 @@ public class Rover {
             direction = 'W';
         else if (direction == 'W')
             direction = 'S';
+        else if (direction == 'S')
+            direction = 'E';
     }
 
     @Override

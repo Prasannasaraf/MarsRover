@@ -35,4 +35,11 @@ public class RoverTest {
 
         assertEquals(new Rover(0, 0, 'S'), rover.navigateTo("L"));
     }
+
+    @Test
+    public void directionChangesToEastWhenRoverTurnsLeftFromSouth() {
+        rover = new Rover(0, 0, 'S');
+
+        assertEquals(new Rover(0, 0, 'E'), rover.navigateTo("L"));
+    }
 }
