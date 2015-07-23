@@ -77,4 +77,9 @@ public class Rover {
         result = 31 * result + (int) direction;
         return result;
     }
+
+    @Override
+    public String toString() {
+        return xCoordinate + " " + yCoordinate + " " + direction;
+    }
 }
