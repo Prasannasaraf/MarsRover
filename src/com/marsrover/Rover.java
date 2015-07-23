@@ -25,7 +25,10 @@ public class Rover {
     }
 
     private void moveForward() {
-        this.yCoordinate+=1;
+        if (direction == 'N')
+            yCoordinate+=1;
+        else if (direction == 'S')
+            yCoordinate-=1;
     }
 
     private void moveRight() {
