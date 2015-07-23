@@ -84,4 +84,11 @@ public class RoverTest {
 
         assertEquals(new Rover(1, 0, 'S'), rover.navigateTo("M"));
     }
+
+    @Test
+    public void xCoordinateIncreasesFrom1TO2WhenRoverMovesInEast() {
+        rover = new Rover(1, 1, 'E');
+
+        assertEquals(new Rover(2, 1, 'E'), rover.navigateTo("M"));
+    }
 }

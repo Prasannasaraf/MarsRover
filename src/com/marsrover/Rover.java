@@ -29,6 +29,8 @@ public class Rover {
             yCoordinate+=1;
         else if (direction == 'S')
             yCoordinate-=1;
+        else if (direction == 'E')
+            xCoordinate+=1;
     }
 
     private void moveRight() {
