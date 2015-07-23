@@ -16,13 +16,22 @@ public class Rover {
         for (int i = 0; i < instruction.length(); i++) {
             if (instruction.charAt(i) == 'L')
                 moveLeft();
+            else if (instruction.charAt(i) == 'R')
+                moveRight();
         }
         return new Rover(this.xCoordinate, this.yCoordinate, this.direction);
+    }
+
+    private void moveRight() {
+        if (direction == 'W')
+            direction = 'N';
     }
 
     private void moveLeft() {
         if (direction == 'E')
             direction = 'N';
+        else if (direction == 'N')
+            direction = 'W';
     }
 
     @Override
