@@ -29,6 +29,8 @@ public class Rover {
             direction = 'W';
         else if (direction == 'E')
             direction = 'S';
+        else if (direction == 'N')
+            direction = 'E';
     }
 
     private void moveLeft() {
