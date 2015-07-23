@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Wealth" default="compileAndRun" basedir=".">
+
+    <target name="compile">
+        <javac srcdir="src;test" destdir="out" includeantruntime="false" classpath="lib/junit-4.10.jar">
+        </javac>
+    </target>
+
+    <target name="compileAndRun" depends="compile">
+        <junit haltonfailure="true" printsummary="true" showoutput="yes">
+            <classpath path="out" location="lib/junit-4.10.jar">
+            </classpath>
+            <test name="com.marsrover.RoverTest"/>
+        </junit>
+    </target>
+
+</project>
