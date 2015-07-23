@@ -18,8 +18,14 @@ public class Rover {
                 moveLeft();
             else if (instruction.charAt(i) == 'R')
                 moveRight();
+            else if (instruction.charAt(i) == 'M')
+                moveForward();
         }
         return new Rover(this.xCoordinate, this.yCoordinate, this.direction);
+    }
+
+    private void moveForward() {
+        this.yCoordinate+=1;
     }
 
     private void moveRight() {

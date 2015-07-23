@@ -70,4 +70,11 @@ public class RoverTest {
 
         assertEquals(new Rover(0, 0, 'E'), rover.navigateTo("R"));
     }
+
+    @Test
+    public void yCoordinateIncreasesFrom1TO2WhenRoverMovesInNorth() {
+        rover = new Rover(1, 1, 'N');
+
+        assertEquals(new Rover(1, 2, 'N'), rover.navigateTo("M"));
+    }
 }
