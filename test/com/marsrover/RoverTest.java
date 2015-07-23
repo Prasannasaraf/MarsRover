@@ -91,4 +91,11 @@ public class RoverTest {
 
         assertEquals(new Rover(2, 1, 'E'), rover.navigateTo("M"));
     }
+
+    @Test
+    public void xCoordinateDecreasesFrom1TO0WhenRoverMovesInWest() {
+        rover = new Rover(1, 1, 'W');
+
+        assertEquals(new Rover(0, 1, 'W'), rover.navigateTo("M"));
+    }
 }
