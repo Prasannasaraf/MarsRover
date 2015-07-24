@@ -103,13 +103,13 @@ public class RoverTest {
     public void checkingFinalPositionAndDirectionForAnInstructionLMLMLMLMM() {
         rover = new Rover(1, 2, 'N');
 
-        assertEquals(new Rover(1, 3, 'N'),rover.navigateTo("LMLMLMLMM"));
+        assertEquals(new Rover(1, 3, 'N'), rover.navigateTo("LMLMLMLMM"));
     }
 
     @Test
     public void roverIsRepresentedInString() {
         rover = new Rover(4, 5, 'W');
 
-        assertEquals("4 5 W",rover.toString());
+        assertEquals("4 5 W", rover.toString());
     }
 }

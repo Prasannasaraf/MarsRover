@@ -21,7 +21,7 @@ public class Rover {
             else if (instruction.charAt(i) == 'M')
                 moveForward();
         }
-        return new Rover(this.xCoordinate, this.yCoordinate, this.direction);
+        return this;
     }
 
     private void moveForward() {
@@ -58,11 +58,11 @@ public class Rover {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+    public boolean equals(Object that) {
+        if (this == that) return true;
+        if (that == null || getClass() != that.getClass()) return false;
 
-        Rover rover = (Rover) o;
+        Rover rover = (Rover) that;
 
         if (xCoordinate != rover.xCoordinate) return false;
         if (yCoordinate != rover.yCoordinate) return false;
