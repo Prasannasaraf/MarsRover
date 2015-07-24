@@ -15,5 +15,7 @@ SETUP :
     junit-4.10.jar
 
 Build:
+ant compile
 
 Run:
+ant
